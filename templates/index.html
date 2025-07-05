@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/static/css/style.css" />
+  <title>String Calculator</title>
+</head>
+<body>
+  <div class="container">
+    <h1>String Calculator</h1>
+    <p><b>Format: op[del1][del2]expression</b><br>Default: Operator: '+' , Delimiter: ',' <br> you can use any number of Delimiters </p>
+    <input id="expression" type="text" placeholder="e.g. *[#]1#3#4" />
+    <div class="buttons">
+      <button id="calculate">Calculate</button>
+      
+    </div>
+    <div id="error" class="error"></div>
+    <div id="result" class="result"></div>
+    <h2>History</h2>
+    <ul id="historyList"></ul>
+  </div>
+  <script src="/static/js/app.js"></script>
+</body>
+</html>
